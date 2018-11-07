@@ -41,26 +41,47 @@
       <div class="banner-content">
         <h1 class="title is-1">Bienvenue sur mon portfolio</h1>
         <h2 class="subtitle">Découvrez mes travaux et mon univers</h2>
-        <button class="button is-link" id="open_modal">Contactez-moi</button>
+        <button class="button is-link" id="open_modal">Cliquez ici pour en savoir plus sur moi</button>
       </div>
     </div>
   </div>
   <!-- banner -->
 
   <!-- MODAL -->
-  <div class="modal" id="modal_to_open">
+  <div class="modal own-modal" id="modal_to_open">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Modal title</p>
-        <button class="delete" aria-label="close"></button>
+        <p class="modal-card-title">Steven Lignereux</p>
+        <button class="delete" aria-label="close" id="close_modal"></button>
       </header>
       <section class="modal-card-body">
-        <!-- Content ... -->
+        <div class="is-flex is-horizontal-center">
+          <figure class="image is-128x128">
+            <img class="avatar" src="src/img/me.jpg">
+          </figure>
+        </div>
+
+        <br>
+
+        <p>Jeune homme passionné de nouvelles technologies et d'informatique, ancien étudiant de la promotion fusion
+          chez O'clock.
+          Breton 100% pur beurre.
+          <br>
+          💻 Passionné par les nouvelles technologies je me tiens sans cesse au courant des nouveautés de ce monde
+          toujours en
+          mouvement. Toujours assoiffé de connaissances je passe le plus clair de mon temps à améliorer mes compétences
+          mais
+          aussi à en acquérir des nouvelles. Curieux de tout et adepte de toutes les lectures je peux aussi bien
+          dévorer un roman
+          de science fiction, qu'une notice d'utilisation. Ce qui m'a naturellement amené à vouloir faire de ma passion
+          une
+          profession en devenant développeur web. 💻</p>
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-success">Save changes</button>
-        <button class="button">Cancel</button>
+        <a href="src/docs/Cv dev.pdf" target="_blank"><button id="btn" class="button is-success">Télécharger mon CV</button></a>
+        <a class="button is-info" target="_blank" href="https://www.linkedin.com/in/stevenlignereux/"><i class="fab fa-linkedin">Mon
+            profil linkedIn</i></a>
       </footer>
     </div>
   </div>
@@ -112,7 +133,8 @@
                 <p class="title">Green Walker</p>
                 <p class="subtitle">Site réalisé pendant la formation udemy</p>
                 <figure class="image is-4by3">
-                  <a href="https://greenwalker.stevenlignereux.fr/" target="_blank" rel="noopener noreferrer"><img src="src/img/voyage.png" title="cliquez sur l'image pour l'ouvrir dans un nouvel onglet" alt="une photo d'un site de randonnée"></a>
+                  <a href="https://greenwalker.stevenlignereux.fr/" target="_blank" rel="noopener noreferrer"><img src="src/img/voyage.png"
+                      title="cliquez sur l'image pour l'ouvrir dans un nouvel onglet" alt="une photo d'un site de randonnée"></a>
                 </figure>
               </article>
             </div>
@@ -123,7 +145,8 @@
                 <p class="title">Jeu du serpent</p>
                 <p class="subtitle">Jeu réalisé en javascript</p>
                 <figure class="image is-4by3">
-                  <a href="https://snake.stevenlignereux.fr/" target="_blank" rel="noopener noreferrer"><img src="src/img/serpent.png" alt="Jeu du serpent" title="cliquez sur l'image pour l'ouvrir dans un nouvel onglet"></a>
+                  <a href="https://snake.stevenlignereux.fr/" target="_blank" rel="noopener noreferrer"><img src="src/img/serpent.png"
+                      alt="Jeu du serpent" title="cliquez sur l'image pour l'ouvrir dans un nouvel onglet"></a>
                 </figure>
               </article>
             </div>
@@ -134,17 +157,16 @@
                 <p class="title">Top 5 des meilleurs actrices</p>
                 <p class="subtitle">Réalisé en jquery pour travailler avec cette librairie</p>
                 <figure class="image is-4by3">
-                  <a href="https://actrices.stevenlignereux.fr/" target="_blank" rel="noopener noreferrer"><img src="src/img/actrices.png" alt="top 5 des meilleurs actrices" title="cliquez sur l'image pour l'ouvrir dans un nouvel onglet" ></a>
+                  <a href="https://actrices.stevenlignereux.fr/" target="_blank" rel="noopener noreferrer"><img src="src/img/actrices.png"
+                      alt="top 5 des meilleurs actrices" title="cliquez sur l'image pour l'ouvrir dans un nouvel onglet"></a>
                 </figure>
               </article>
             </div>
-
-
           </div>
         </div>
       </div>
-
     </div>
+  </div>
 
 
     <!-- PORTFOLIO -->
@@ -158,51 +180,52 @@
             <div class="field">
               <label for="" class="label">Votre nom</label>
               <div class="control">
-                <input type="text" placeholder="" class="input">
+                <input id="name" type="text" placeholder="Doe" class="input" name="name">
               </div>
             </div>
             <div class="field">
               <label for="" class="label">Votre prénom</label>
               <div class="control">
-                <input type="text" placeholder="" class="input">
+                <input id="firstname" type="text" placeholder="John" class="input" name="firstname">
               </div>
             </div>
             <div class="field">
               <label for="" class="label">Votre email</label>
               <div class="control">
-                <input type="text" placeholder="" class="input">
+                <input id="email" type="text" placeholder="John.Doe@anonyme.com" class="input" name="email">
               </div>
             </div>
             <div class="field">
               <label for="" class="label">Votre message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Votre message"></textarea>
+                <textarea id="message" class="textarea" placeholder="Votre message..." name="message"></textarea>
               </div>
             </div>
           </form>
+          <button class="button is-link" id="send_email">Envoyer !</button>
         </div>
-          <div class="footer-information">
-            <p>10 Place Aime Corvec </p>
-            <p>56670 RIANTEC</p>
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/stevenlignereux" target="_blank" rel="noopener noreferrer" title="le lien s'ouvrira dans un nouvel onglet">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/StevenLignereux" target="_blank" rel="noopener noreferrer" title="le lien s'ouvrira dans un nouvel onglet">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/stevenlignereux/" target="_blank" rel="noopener noreferrer" title="le lien s'ouvrira dans un nouvel onglet">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        
+        <div class="footer-information">
+          <p>10 Place Aime Corvec </p>
+          <p>56670 RIANTEC</p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/stevenlignereux" target="_blank" rel="noopener noreferrer" title="le lien s'ouvrira dans un nouvel onglet">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/StevenLignereux" target="_blank" rel="noopener noreferrer" title="le lien s'ouvrira dans un nouvel onglet">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/stevenlignereux/" target="_blank" rel="noopener noreferrer" title="le lien s'ouvrira dans un nouvel onglet">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </footer>
     </div>
     <!-- CONTACT -->

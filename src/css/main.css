@@ -49,6 +49,7 @@ HEADER
   color: #3498db;
 }
 
+
 /*
 BANNER
 */
@@ -110,4 +111,24 @@ FOOTER
   list-style-type: none;
   font-size: 35px;
   letter-spacing: 10px;
+}
+
+/*
+MODAL
+*/
+.own-modal {
+  padding-top: 120px;
+  text-align: center;
+}
+
+.is-horizontal-center {
+  justify-content: center;
+}
+
+section p {
+  padding-top: 30px;
+}
+
+footer #btn {
+  margin-right: 25px;
 }
