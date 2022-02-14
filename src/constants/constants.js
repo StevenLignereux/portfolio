@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: 'Un Site permaculture',
-    description: "Page complète sur la permaculture utilisant le framework bootstrap ainsi que HTML, CSS et JS. Le but étant de continuer à dévelopepr les coméptences dans ces lanages et s'intréresser au SEO avec une page plus complète que la précédente.",
+    description: "Page complète sur la permaculture utilisant le framework bootstrap ainsi que HTML, CSS et JS. Le but étant de continuer à développer les compétences dans ces langages et s'intréresser au SEO avec une page plus complète que la précédente.",
     image: '/images/3.png',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     source: 'https://github.com/StevenLignereux/permaculture',
@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     title: 'Todo List',
-    description: "Une ToDo list rélalisée en PHP8 avec une base de donénjes sqlite. Lu but étant de s'entrainer aux nouvelles fonctionalités du langage PHP. Le langage javascript est aussi utilisé pour des appels asynchrones. La base de donnée est en sqlite afin d'obtenir une application légère.",
+    description: "Une ToDo list réalisée en PHP8. Le but étant de s'entrainer aux nouvelles fonctionnalités du langage PHP. Le langage javascript est aussi utilisé pour des appels asynchrones. La base de donnée est en sqlite afin d'obtenir une application légère.",
     image: '/images/5.png',
     tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'SQLite'],
     source: 'https://github.com/StevenLignereux/todoList',
@@ -46,7 +46,7 @@ export const projects = [
   },
   {
     title: 'Site du klak',
-    description: "Un site créé pour l'association lorientaise le Klak. Le site est un blog avec un système d'administration pour faire connaître l'association. Il utilise le framework php laravel ainsi que du javascript du CSS et d'autres composant du framework comme laravel file manager ou breeze.",
+    description: "Un site créé pour l'association lorientaise le Klak. Le site est un blog avec un système d'administration pour faire connaître l'association. Il utilise le framework php laravel ainsi que du javascript du CSS et d'autres composants du framework comme laravel file manager ou breeze.",
     image: '/images/6.png',
     tags: ['Laravel', 'CSS', 'JavaScript', 'PHP', 'SQLite'],
     // source: 'https://github.com/StevenLignereux/todoList',
@@ -55,7 +55,7 @@ export const projects = [
   },
   {
     title: 'Développeur web junior',
-    description: "Contribution au jobboard développeur web junior, dont le but est de regrouper les offres demandant pas d'experience afin de mettre en relation des entreprises ayant besoins de développeurs avec des profils juniors. Travail d'équipe sous la direction de Nicolas Ruiz, avec Edmond de Tournadre et Gaëlle PIERLOT.",
+    description: "Contribution au jobboard développeur web junior, dont le but est de regrouper les offres ne demandant pas d'experience afin de mettre en relation des entreprises ayant besoins de développeurs avec des profils juniors. Travail d'équipe sous la direction de Nicolas Ruiz, avec Edmond de Tournadre et Gaëlle PIERLOT.",
     image: '/images/7.png',
     tags: ['Laravel', 'CSS', 'JavaScript', 'PHP'],
     visit: 'https://developpeurwebjunior.fr/',
@@ -67,5 +67,5 @@ export const TimeLineData = [
   { year: 2018, text: 'Formation wordpress', },
   { year: 2019, text: 'Stage de développeur symfony', },
   { year: 2020, text: 'Stage développeur FullStack', },
-  { year: 2021, text: 'Titre profesionnel développeur web et web mobile', },
+  { year: 2021, text: 'Titre professionnel développeur web et web mobile', },
 ];

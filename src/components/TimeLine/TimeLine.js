@@ -44,7 +44,7 @@ const Timeline = () => {
 
   return (
     <Section id='about'>
-      <SectionTitle>A Propos de moi</SectionTitle>
+      <SectionTitle>À Propos de moi</SectionTitle>
       <SectionText>
         Passionné par les nouvelles technologies je me tiens sans cesse au courant des nouveautés de ce monde toujours en mouvement. Toujours assoiffé de connaissances je passe le plus clair de mon temps à améliorer mes compétences mais aussi à en acquérir des nouvelles.
       </SectionText>
